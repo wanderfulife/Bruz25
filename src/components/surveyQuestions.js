@@ -48,12 +48,23 @@ export const templateSurveyQuestions = [
         next: "Q4"
     },
 
-    // 🏘️ Q3 - Nom de la rue pour les résidents de Bruz
+    // 🏘️ Q3 - Choix rue ou NSP pour les résidents de Bruz
     {
         id: "Q3_RUE_BRUZ",
         text: "Quel est le nom de votre rue ?",
-         type: 'street',
-        next: "Q3_QUARTIER_BRUZ"
+        type: 'singleChoice',
+        options: [
+            { id: 1, text: "Choisir ma rue dans la liste", next: "Q3_RUE_LISTE" },
+            { id: 2, text: "NSP / Je ne sais pas", next: "Q3_QUARTIER_BRUZ" }
+        ]
+    },
+
+    // 🏘️ Q3 - Sélecteur de rue (637 rues)
+    {
+        id: "Q3_RUE_LISTE",
+        text: "Sélectionnez votre rue :",
+        type: 'street',
+        next: "Q4"
     },
 
     // 🏘️ Q3 - Quartier de Bruz si pas de nom de rue
