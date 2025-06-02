@@ -52,8 +52,7 @@ export const templateSurveyQuestions = [
     {
         id: "Q3_RUE_BRUZ",
         text: "Quel est le nom de votre rue ?",
-        type: 'freeText',
-        freeTextPlaceholder: "Nom de la rue...",
+         type: 'street',
         next: "Q3_QUARTIER_BRUZ"
     },
 
