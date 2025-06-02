@@ -72,7 +72,7 @@ export const templateSurveyQuestions = [
             { id: 8, text: "Orguenais", next: "Q4" },
             { id: 9, text: "Vau Gaillard", next: "Q4" },
             { id: 10, text: "Vert Buisson", next: "Q4" },
-            { id: 11, text: "Champ libre", next: "Q3_AUTRE" },
+            { id: 11, text: "Autre", next: "Q3_AUTRE" },
         ]
     },
 
